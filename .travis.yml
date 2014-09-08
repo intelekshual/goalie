@@ -5,5 +5,10 @@ go:
   - 1.2
   - tip
 
+services:
+  - redis-server
+
 install:
   - go get github.com/stretchr/testify/assert
+  - go get github.com/deckarep/golang-set
+  - go get github.com/garyburd/redigo/redis
