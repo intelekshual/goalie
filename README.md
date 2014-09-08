@@ -1,6 +1,6 @@
 # goalie
 
-[![travis](https://travis-ci.org/intelekshual/go-simpleflake.svg)](https://travis-ci.org/intelekshual/goalie)
+[![travis](https://travis-ci.org/intelekshual/goalie.svg)](https://travis-ci.org/intelekshual/goalie)
 
 Simple ACLs in Go, because ACLs don't need to be complicated
 
