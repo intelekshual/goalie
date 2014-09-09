@@ -31,34 +31,34 @@ Or, if you want to access your ACLs across processes, you can use the built-in R
   })
 ```
 
-### Grant:
+### Grant(grantee, resource)
 
 ```go
 if err := acl.Grant("luke-skywalker", "the-force"); err != nil {
-  log.Fatal("Could not grant Luke Skywalker access to the Force")
+  log.Fatal("There was an error granting luke-skywalker access to the-force")
 }
 ```
 
-### Assert:
+### Assert(grantee, resource)
 
 ```go
 if ok, err := acl.Assert("luke-skywalker", "the-force"); err != nil {
-  log.Fatal("Could not determine if Luke Skywalker has access to the Force")
+  log.Fatal("There was an error determining if luke-skywalker has access to the-force")
 }
 
 if ok {
-  log.Println("Luke Skywalker has the Force!")
+  // Luke has the Force!
 } else {
-  log.Println("Luke Skywalker doesn't have the Force!")
+  // Luke doesn't have the Force!
 }
 
 ```
 
-### Revoke:
+### Revoke(grantee, resource)
 
 ```go
 if err := acl.Revoke("luke-skywalker", "the-force"); err != nil {
-  log.Fatal("Could not revoke Luke Skywalker's access to the Force")
+  log.Fatal("There was an error revoking luke-skywalker's access to the-force")
 }
 ```
 
